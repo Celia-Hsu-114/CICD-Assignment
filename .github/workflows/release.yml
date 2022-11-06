@@ -1,8 +1,10 @@
 name: My First Workflow
 
 #trigger
-on: 
-- push
+on:
+  push:
+    tags:
+    - 'v*.*'
 #jobs in the workflow
 jobs:
    
@@ -13,7 +15,7 @@ jobs:
     
     - name: Get version
       id: get_version
-      run: echo ::set-output name=CICD-Assignment
+      run: echo ::set-outputn ame=VERSION::${GITHUB_REF/refs\/tags\//}
     
     - name: Create Release
       uses: actions/create-release@v1

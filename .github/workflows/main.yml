@@ -2,7 +2,10 @@ name: Deploy to Railway
 
 on:
   push:
-    branches: [main]
+    branches: 
+      -main
+    tags:
+      -v1.1
 
 jobs:
   deploy:

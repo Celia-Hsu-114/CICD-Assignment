@@ -26,60 +26,60 @@ jobs:
         uses: slackapi/slack-github-action@v1.23.0
         with:
     # For posting a rich message using Block Kit
-        payload: |
-          {
-            "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-            "blocks": [
-              {
-                "type": "header",
-                "text": {
-                "type": "plain_text",
-                "text": "GDipSA 55CI/CD Assignment Submission",
-                "emoji": true 
-              }
-            },
-           {
-                "type": "section",
-                "fields": [
-                   {
-                "type": "mrkdwn",
-                "text": "*Name*\n Xu Bingxin"
-            },
-          {
-                "type": "mrkdwn",
-                "text": "*Metriculation:*\nA0265087W"
-                   }
-                ]
-            },
-          {
-                "type": "section",
-                "fields": [
-                     {
-                       "type": "mrkdwn",
-                       "text": "*Email:*\n e1045762@u.nus.edu"
-                 },
+          payload: |
+            {
+              "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+              "blocks": [
                 {
-                  "type": "mrkdwn",
-                  "text": "*Repository:*\n https://github.com/Celia-Hsu-114/CICD-Assignment.git"
-                   }
-                 ]
+                  "type": "header",
+                  "text": {
+                  "type": "plain_text",
+                  "text": "GDipSA 55CI/CD Assignment Submission",
+                  "emoji": true 
+                }
               },
-          {
-                "type": "section",
-                "fields": [
+             {
+                  "type": "section",
+                  "fields": [
                      {
-                       "type": "mrkdwn",
-                       "text": "*Deployment:*\n https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7"
-                 },
-          {
-               "type": "section",
-               "text": {
-                   "type": "mrkdwn",
-                   "text": "<https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7|Open Application>"
+                  "type": "mrkdwn",
+                  "text": "*Name*\n Xu Bingxin"
+              },
+            {
+                  "type": "mrkdwn",
+                  "text": "*Metriculation:*\nA0265087W"
+                     }
+                  ]
+              },
+            {
+                  "type": "section",
+                  "fields": [
+                       {
+                         "type": "mrkdwn",
+                         "text": "*Email:*\n e1045762@u.nus.edu"
+                   },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Repository:*\n https://github.com/Celia-Hsu-114/CICD-Assignment.git"
+                     }
+                   ]
+                },
+            {
+                  "type": "section",
+                  "fields": [
+                       {
+                         "type": "mrkdwn",
+                         "text": "*Deployment:*\n https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7"
+                   },
+            {
+                 "type": "section",
+                 "text": {
+                     "type": "mrkdwn",
+                     "text": "<https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7|Open Application>"
+               }
              }
-           }
-          ]
-          }
+            ]
+            }
 
       
         env:

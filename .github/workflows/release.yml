@@ -1,0 +1,22 @@
+name: My First Workflow
+
+#trigger
+on: 
+- push
+#jobs in the workflow
+jobs:
+   my-first-workflow:
+ #os that this job will be running on
+    runs-on: ubuntu-latest
+#list of steps to perform tasks steps are arrays and each of them will has its name
+    steps:
+     - name: Checkout
+       uses: actions/checkout@v2.5.0
+       
+     - name: Create Release
+       uses: ncipollo/release-action@v1.11.1
+       
+     - name: slack-send
+       uses: slackapi/slack-github-action@v1.23.0
+
+

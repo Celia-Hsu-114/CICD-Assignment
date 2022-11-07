@@ -72,7 +72,7 @@ jobs:
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Deployment:*\n https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7"
+                      "text": "*Deployment:*\n https://abandoned-interest-production.up.railway.app/"
                     }
                   ]
                 },
@@ -80,7 +80,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "<https://railway.app/project/d0dbf668-39d7-4f27-bbc7-f9247bffe8e7|Open Application>"
+                    "text": "<https://abandoned-interest-production.up.railway.app/>"
                   }
                 }
               ]
